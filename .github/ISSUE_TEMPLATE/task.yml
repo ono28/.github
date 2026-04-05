@@ -13,7 +13,7 @@ body:
     attributes:
       label: 目的
       description: このタスクを行う目的
-      placeholder: 例）公開前に問い合わせフォームの動作確認を完了する
+      placeholder: "例）公開前に問い合わせフォームの動作確認を完了する"
     validations:
       required: true
 
@@ -48,7 +48,7 @@ body:
     attributes:
       label: 期限
       description: 期限があれば記載
-      placeholder: 例）2026-04-10
+      placeholder: "例）2026-04-10"
     validations:
       required: false
 
@@ -57,7 +57,7 @@ body:
     attributes:
       label: 担当
       description: 担当者名やチーム名
-      placeholder: 例）@yusukeono / Frontend team
+      placeholder: "例）@yusukeono / Frontend team"
     validations:
       required: false
 
@@ -66,6 +66,6 @@ body:
     attributes:
       label: 備考
       description: 関連Issue、参考URL、注意点など
-      placeholder: 例）関連: #123
+      placeholder: "例）関連: #123"
     validations:
       required: false
