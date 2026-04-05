@@ -1,0 +1,66 @@
+name: 機能追加
+description: 新機能や改善案の提案はこちら
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        機能提案ありがとうございます。
+        背景と目的が分かると検討しやすくなります。
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: 追加したい機能
+      description: 何を実現したいか
+      placeholder: 例）CSVエクスポート機能を追加したい
+    validations:
+      required: true
+
+  - type: textarea
+    id: background
+    attributes:
+      label: 背景・課題
+      description: なぜ必要か、どんな問題があるか
+      placeholder: 例）毎月手作業で集計しており時間がかかっている
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 提案内容
+      description: どんな仕様や動きにしたいか
+      placeholder: |
+        例）
+        - 一覧画面にCSV出力ボタンを追加
+        - フィルタ条件を反映して出力
+    validations:
+      required: true
+
+  - type: textarea
+    id: benefits
+    attributes:
+      label: 期待される効果
+      description: 導入すると何が良くなるか
+      placeholder: 例）作業時間を月2時間削減できる
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 代替案・補足
+      description: 他の方法や注意点があれば記載
+      placeholder: 例）まずは管理者のみ利用可能でもよい
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 確認事項
+      options:
+        - label: 既存の Issue / 要望と重複していないことを確認しました
+          required: true
