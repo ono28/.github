@@ -1,1 +1,71 @@
+name: タスク
+description: 実装・調査・運用などの作業管理用
+title: "[Task] "
+labels: ["task"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        実施する作業内容を整理するためのテンプレートです。
 
+  - type: textarea
+    id: purpose
+    attributes:
+      label: 目的
+      description: このタスクを行う目的
+      placeholder: 例）公開前に問い合わせフォームの動作確認を完了する
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: 作業内容
+      description: 実施する内容を具体的に書いてください
+      placeholder: |
+        例）
+        - フォーム送信確認
+        - 自動返信メール確認
+        - 管理者通知確認
+    validations:
+      required: true
+
+  - type: textarea
+    id: done
+    attributes:
+      label: 完了条件
+      description: どこまでできたら完了か
+      placeholder: |
+        例）
+        - [ ] テスト送信が成功する
+        - [ ] エラー時の表示が確認できる
+        - [ ] 管理者に通知が届く
+    validations:
+      required: true
+
+  - type: input
+    id: schedule
+    attributes:
+      label: 期限
+      description: 期限があれば記載
+      placeholder: 例）2026-04-10
+    validations:
+      required: false
+
+  - type: input
+    id: assignee
+    attributes:
+      label: 担当
+      description: 担当者名やチーム名
+      placeholder: 例）@yusukeono / Frontend team
+    validations:
+      required: false
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: 備考
+      description: 関連Issue、参考URL、注意点など
+      placeholder: 例）関連: #123
+    validations:
+      required: false
