@@ -56,11 +56,3 @@ body:
       placeholder: 例）まずは管理者のみ利用可能でもよい
     validations:
       required: false
-
-  - type: checkboxes
-    id: checks
-    attributes:
-      label: 確認事項
-      options:
-        - label: 既存の Issue / 要望と重複していないことを確認しました
-          required: true
