@@ -55,7 +55,7 @@ body:
       description: OS / ブラウザ / アプリバージョンなど
       placeholder: 例）macOS 15 / Chrome 135 / app v2.3.1
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: logs
